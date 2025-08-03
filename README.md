@@ -5,16 +5,23 @@ This is a real-time Python application that uses MediaPipe and OpenCV to detect 
 💡 FEATURES:
 
 Real-time hand detection using MediaPipe
+
 Accurate finger counting for both left and right hands
+
 Total fingers displayed live on screen
+
 Individual finger count shown near each hand
+
 Works with one or two hands simultaneously
+
 Smooth and responsive visualization
 
 📂 OUTPUT:
 
 The number of fingers detected is displayed:
+
   Near each hand (Left / Right)
+  
   As a total count at the top-left corner of the window
 
 🛠️ REQUIREMENTS:
