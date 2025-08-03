@@ -25,12 +25,12 @@ Install the dependencies using:
 pip install opencv-python mediapipe
 ```
 ▶️ HOW TO RUN:
->Ensure your webcam is connected and not being used by another application.
->Run the script:
+1.Ensure your webcam is connected and not being used by another application.
+2.Run the script:
 ```bash
 python #HAND_FINGER_COUNTER.py
 ```
->Press ESC to exit the application.
+3.Press ESC to exit the application.
 
 🧠 LOGIC:
 The application uses MediaPipe’s hand landmarks.
