@@ -2,6 +2,7 @@
 
 This is a real-time Python application that uses MediaPipe and OpenCV to detect hands from a webcam feed, count the number of raised fingers for each hand, and display the results live with annotations.
 
+
 💡 FEATURES:
 
 Real-time hand detection using MediaPipe
