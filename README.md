@@ -1,62 +1,59 @@
-🖐️ LIVE FINGER COUNTING WITH MEDIAPIPE
+# 🖐️ Hand Finger Counter Using MediaPipe
 
-This is a real-time Python application that uses MediaPipe and OpenCV to detect hands from a webcam feed, count the number of raised fingers for each hand, and display the results live with annotations.
+A real-time Python application that uses **MediaPipe** and **OpenCV** to detect hands from a webcam feed, count the number of raised fingers, and display the result live.
 
+---
 
-💡 FEATURES:
+## 💡 Features
 
-Real-time hand detection using MediaPipe
+- Real-time hand detection using MediaPipe  
+- Finger counting for both left and right hands  
+- Displays:
+  - Individual hand count (Left/Right)
+  - Total fingers raised  
+- Supports single or dual hand input  
+- Annotated live video feed  
 
-Accurate finger counting for both left and right hands
+---
 
-Total fingers displayed live on screen
+## 📂 Output
 
-Individual finger count shown near each hand
+- Live webcam feed with:
+  - Finger count near each detected hand
+  - Total finger count at the top-left corner  
 
-Works with one or two hands simultaneously
+---
 
-Smooth and responsive visualization
+## 🛠️ Requirements
 
+- Python 3.x  
+- OpenCV  
+- MediaPipe  
 
-📂 OUTPUT:
+Install dependencies using:
 
-The number of fingers detected is displayed:
-
-  Near each hand (Left / Right)
-  
-  As a total count at the top-left corner of the window
-  
-
-🛠️ REQUIREMENTS:
-
-Python 3.x
-
-OpenCV
-
-MediaPipe
-
-Install the dependencies using:
 ```bash
 pip install opencv-python mediapipe
 ```
 
+---
 
-▶️ HOW TO RUN:
+## ▶️ How to Run
 
-1.Ensure your webcam is connected and not being used by another application.
-
-2.Run the script:
+-Ensure your webcam is connected
+-Run the Python script:
 ```bash
 python #HAND_FINGER_COUNTER.py
 ```
+-Press ESC key to exit
 
-3.Press ESC to exit the application.
+---
 
+## 🔍 Logic Used
 
-🧠 LOGIC:
+-Uses MediaPipe’s 21 hand landmarks
+-Thumb logic differs for left and right hands (based on x-coordinate)
+-Other fingers checked using y-coordinates of tip vs lower joint
+-Counts are updated live per frame
 
-The application uses MediaPipe’s hand landmarks.
-
-Thumb direction is determined based on hand side (Left/Right).
-
-Other fingers are checked by comparing tip and lower joint positions.
+---
