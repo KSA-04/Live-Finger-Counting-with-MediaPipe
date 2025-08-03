@@ -40,20 +40,20 @@ pip install opencv-python mediapipe
 
 ## ▶️ How to Run
 
--Ensure your webcam is connected
--Run the Python script:
+- Ensure your webcam is connected
+- Run the Python script:
 ```bash
 python #HAND_FINGER_COUNTER.py
 ```
--Press ESC key to exit
+- Press ESC key to exit
 
 ---
 
 ## 🔍 Logic Used
 
--Uses MediaPipe’s 21 hand landmarks
--Thumb logic differs for left and right hands (based on x-coordinate)
--Other fingers checked using y-coordinates of tip vs lower joint
--Counts are updated live per frame
+- Uses MediaPipe’s 21 hand landmarks
+- Thumb logic differs for left and right hands (based on x-coordinate)
+- Other fingers checked using y-coordinates of tip vs lower joint
+- Counts are updated live per frame
 
 ---
